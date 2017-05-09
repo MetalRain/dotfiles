@@ -1,0 +1,7 @@
+! use green text on blackish bg
+*foreground: rgb:00/ff/00
+*background: rgb:00/00/00
+
+! Use antialiased sans font
+xterm*faceName: Bitstream Vera Sans Mono:size=8:antialias=true
+xterm*font: 7x13
