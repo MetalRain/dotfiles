@@ -1,0 +1,2 @@
+#!/bin/bash
+conky | dzen2 -dock -w '2560' -h '20' -ta 'r' -x '0' -y '0'

@@ -1,0 +1,22 @@
+background no
+out_to_console yes
+out_to_x no
+own_window_type normal
+update_interval 1.0
+total_run_times 0
+use_spacer none
+ 
+TEXT
+UPTIME: ${uptime} \
+            \
+${wireless_essid wlp3s0} ↑${upspeed wlp3s0}↓${downspeed wlp3s0}\
+            \
+MEM: ${memperc}% ${mem} ${swap}\
+            \
+CPU: ${cpu 0}% [${loadavg 1 2 3}] ${acpitemp}C \
+            \
+DISK: ${fs_free /}\
+            \
+BAT: ${battery_percent BAT0}% ${battery_time}\
+            \
+${time %a %d.%m.%Y %H:%M:%S}

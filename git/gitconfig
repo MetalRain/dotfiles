@@ -1,3 +1,10 @@
+[alias]
+  co = checkout
+  ci = commit
+  dc = diff --cached
+  st = status
+  br = branch
+  hist = log --graph --oneline
 [user]
 	email = martikainenotto@gmail.com
 	name = Otto Martikainen

@@ -7,3 +7,5 @@ PS1='[\u@\h \W]\$ '
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
+
+set _JAVA_AWT_WM_NONREPARENTING=1

@@ -1,7 +1,7 @@
-! use green text on blackish bg
-*foreground: rgb:00/ff/00
+! use ~white text on black bg
+*foreground: rgb:ee/ee/ee
 *background: rgb:00/00/00
 
-! Use antialiased sans font
-xterm*faceName: Bitstream Vera Sans Mono:size=8:antialias=true
-xterm*font: 7x13
+!dzen2.font:       -*-fixed-*-*-*-*-16-*-*-*-*-*-*-*
+!dzen2.foreground: #22EE11
+!dzen2.background: black

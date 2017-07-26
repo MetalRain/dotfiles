@@ -1,6 +1,7 @@
 # .xinitrc
 
-xrandr -s 0
+xrandr --setprovideroutputsourcemodesetting NVIDIA-0
+xrandr --auto
 
 xrdb $HOME/.Xresources
 xsetroot -cursor_name left_ptr
@@ -13,10 +14,6 @@ if [ -x /usr/bin/ssh-agent ] && [ -f $id ]; then
   ssh-add < /dev/null
 fi
 
-xset fp+ /usr/local/lib/X11/fonts/terminus
-xset fp+ /usr/local/lib/X11/fonts/ghostscript
-xset fp+ /usr/X11R6/lib/X11/fonts/TTF/
-
 setxkbmap fi
 
 xmodmap -e "keycode 233 = Page_Down"
@@ -27,9 +24,8 @@ xmodmap -e "add Control = Control_L"
 
 export PATH="$PATH:/home/otto/bin"
 
-xmonad &
+xautolock -time 5 -locker slock &
 
-# wait for xmonad
-wait $!
+dzconky &
 
-wait
+exec xmonad

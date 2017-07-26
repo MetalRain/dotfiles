@@ -2,11 +2,5 @@
 alias aliases='vim ~/.bash_aliases'
 alias poweroff='shutdown -h now'
 
-# git 
-alias gits='git status'
-alias gitd='git diff'
-alias gitdc='git diff --cached'
-alias gitl='git log --graph --oneline'
-
 # locations
 alias dev='cd ~/dev/'
